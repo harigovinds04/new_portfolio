@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Harigovind S — JobGrids AI Job Portal, BHub Blood Bank System, Shopping Trends Data Analysis, and Web Applications.">
+  <meta name="theme-color" content="#f7f6f2">
+  <title>Projects & Works — Harigovind S</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Harigovind home"><span class="brand-mark">H</span> harigovind<span class="dot-accent">.</span></a>
+      <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Works</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Journey</a>
+        
+      </nav>
+      <a class="nav-cta" href="contact.html">Let's talk <span>↗</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <div class="wrap">
+        <div class="page-intro-grid">
+          <div>
+            <div class="kicker">02 — Selected Works</div>
+            <h1>Projects &amp;<br>applications I've <em>built.</em></h1>
+            <p class="page-intro-copy">A closer look at my software engineering projects, from intelligent job recruitment platforms and healthcare management to consumer data analytics.</p>
+          </div>
+          <div class="page-intro-stats">
+            <div class="stat-pill">
+              <strong>PHP · Laravel · MySQL</strong>
+              <span>Core Web Stack</span>
+            </div>
+            <div class="stat-pill">
+              <strong>Python · Django</strong>
+              <span>Backend &amp; Analytics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="projects" style="padding-top: 50px; padding-bottom: 70px;">
+      <!-- Category Filter Tabs -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack &amp; Web Apps</button>
+        <button class="filter-btn" data-filter="data">Data Analysis</button>
+        <button class="filter-btn" data-filter="frontend">Frontend &amp; UI</button>
+      </div>
+
+      <!-- Project 1: JobGrids – AI Powered Job Portal -->
+      <article class="project-card" data-category="fullstack">
+        <div class="visual">
+          <img 
+            src="assets/img/project1.png" 
+            alt="JobGrids AI Job Portal Dashboard Screenshot"
+            class="project-image"
+          >
+        </div>
+        <div class="content">
+          <div class="heading">
+            <div>
+              <div class="kicker">PHP · Laravel · JavaScript · AI Matching</div>
+              <h2>JobGrids — AI Powered Job Portal</h2>
+              <div class="subtitle">An intelligent recruitment platform connecting job seekers with relevant employment opportunities through skill-based matching.</div>
+            </div>
+            <a class="repo-btn" href="https://github.com/harigovinds04/Online-Job-Portal-" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+          </div>
+          <p class="description">
+            JobGrids is an AI-powered job portal engineered to streamline the end-to-end recruitment process. It connects job candidates with verified companies using an intelligent recommendation and skill-based matching engine. Features dedicated portals for applicants to search vacancies, build profiles, upload resumes, and track applications, while giving recruiters tools for applicant shortlisting, interview coordination, and vacancy administration.
+          </p>
+          <div class="tags">
+            <span class="tag">PHP</span>
+            <span class="tag">Laravel</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Python / Django</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Skill-Based Matching</span>
+          </div>
+          <div class="details">
+            <div>
+              <h3>Key Features</h3>
+              <div class="features">
+                <div class="feature"><span class="check">✓</span><span>Intelligent job recommendation and skill-based candidate matching</span></div>
+                <div class="feature"><span class="check">✓</span><span>Multi-role access: Candidate, Employer, and Administrator</span></div>
+                <div class="feature"><span class="check">✓</span><span>Comprehensive job search, keyword filtering, and category browsing</span></div>
+                <div class="feature"><span class="check">✓</span><span>Candidate profile building, skill tagging, and resume uploads</span></div>
+                <div class="feature"><span class="check">✓</span><span>Real-time application status progression tracking for applicants</span></div>
+                <div class="feature"><span class="check">✓</span><span>Recruiter dashboard for reviewing, shortlisting, and hiring</span></div>
+                <div class="feature"><span class="check">✓</span><span>Company verification and administrative governance pipeline</span></div>
+                <div class="feature"><span class="check">✓</span><span>Streamlined recruitment workflow reducing hiring friction</span></div>
+              </div>
+            </div>
+            <div>
+              <h3>Technology Stack</h3>
+              <div class="stack">
+                <span>PHP</span>
+                <span>Laravel Framework</span>
+                <span>Python / Django</span>
+                <span>MySQL</span>
+                <span>JavaScript</span>
+                <span>HTML5 / CSS3</span>
+              </div>
+              <div class="note">
+                <strong>Project Impact</strong><br>
+                Replaces disjointed job searching with an automated, skill-matched portal that reduces hiring turnaround time for both job seekers and recruiters.
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Online Blood Bank System (BHub) -->
+      <article class="project-card" data-category="fullstack">
+        <div class="visual visual-alt">
+          <div class="mock-browser">
+            <div class="mock-browser-bar">
+              <i></i><i></i><i></i>
+              <span style="font-size: 11px; color: #888; margin-left: 8px;">bhub-bloodbank.org/dashboard</span>
+            </div>
+            <div class="mock-browser-body" style="background: #ffffff; padding: 26px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <div>
+                  <span style="color: #d9534f; font-size: 11px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase;">BHub Management System</span>
+                  <h3 style="font-size: 22px; font-weight: 800; margin: 4px 0 0; font-family: 'Manrope', sans-serif;">Blood Inventory &amp; Donor Registry</h3>
+                </div>
+                <span class="tag" style="background: #fdf2f2; color: #d9534f; border-color: #f5c6cb; font-weight: 700;">Live Blood Units</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px;">
+                <div style="padding: 12px; border: 1px solid #e8e6df; border-radius: 8px; text-align: center; background: #faf9f6;">
+                  <strong style="color: #d9534f; font-size: 18px; display: block;">A+</strong>
+                  <span style="font-size: 11px; color: #777;">24 Units</span>
+                </div>
+                <div style="padding: 12px; border: 1px solid #e8e6df; border-radius: 8px; text-align: center; background: #faf9f6;">
+                  <strong style="color: #d9534f; font-size: 18px; display: block;">B+</strong>
+                  <span style="font-size: 11px; color: #777;">18 Units</span>
+                </div>
+                <div style="padding: 12px; border: 1px solid #e8e6df; border-radius: 8px; text-align: center; background: #faf9f6;">
+                  <strong style="color: #d9534f; font-size: 18px; display: block;">O+</strong>
+                  <span style="font-size: 11px; color: #777;">32 Units</span>
+                </div>
+                <div style="padding: 12px; border: 1px solid #e8e6df; border-radius: 8px; text-align: center; background: #faf9f6;">
+                  <strong style="color: #d9534f; font-size: 18px; display: block;">AB-</strong>
+                  <span style="font-size: 11px; color: #777;">6 Units</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="heading">
+            <div>
+              <div class="kicker">PHP · MySQL · JavaScript · Healthcare System</div>
+              <h2>Online Blood Bank System (BHub)</h2>
+              <div class="subtitle">A secure Blood Bank Management System developed to improve efficiency and transparency in blood donation and inventory control.</div>
+            </div>
+            <a class="repo-btn" href="https://github.com/harigovinds04" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+          </div>
+          <p class="description">
+            Developed BHub to address urgent blood requirement coordination and eliminate delays during critical emergencies. The system features a dynamic frontend, robust backend architecture, and a secure relational database using PHP and MySQL. It tracks real-time blood stock counts by blood group, manages donor registration histories, processes hospital requests, and ensures complete inventory transparency.
+          </p>
+          <div class="tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Relational Database</span>
+            <span class="tag">Healthcare IT</span>
+          </div>
+          <div class="details">
+            <div>
+              <h3>Key Features</h3>
+              <div class="features">
+                <div class="feature"><span class="check">✓</span><span>Donor registration, eligibility tracking, and medical history logs</span></div>
+                <div class="feature"><span class="check">✓</span><span>Live inventory tracking categorized by blood group (A+, B+, O+, AB, etc.)</span></div>
+                <div class="feature"><span class="check">✓</span><span>Hospital blood request submission, urgency tagging, and order status</span></div>
+                <div class="feature"><span class="check">✓</span><span>Stock deduction and auto-replenishment calculation workflows</span></div>
+                <div class="feature"><span class="check">✓</span><span>Administrative dashboard for blood bank operators and staff</span></div>
+                <div class="feature"><span class="check">✓</span><span>Secure SQL database schema ensuring patient confidentiality</span></div>
+              </div>
+            </div>
+            <div>
+              <h3>Technology Stack</h3>
+              <div class="stack">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>JavaScript</span>
+                <span>HTML / CSS</span>
+              </div>
+              <div class="note">
+                <strong>Social Impact</strong><br>
+                Enhances transparency and speeds up critical hospital matching during emergencies, ensuring timely availability of lifesaving blood units.
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: Shopping Trends Data Analysis -->
+      <article class="project-card" data-category="data">
+        <div class="visual visual-blue">
+          <div class="mock-browser">
+            <div class="mock-browser-bar">
+              <i></i><i></i><i></i>
+              <span style="font-size: 11px; color: #888; margin-left: 8px;">edunet-analysis.local/trends</span>
+            </div>
+            <div class="mock-browser-body" style="background: #ffffff; padding: 24px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                <div>
+                  <span style="color: #1e6091; font-size: 11px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase;">Edunet Foundation Project</span>
+                  <h3 style="font-size: 20px; font-weight: 800; margin: 4px 0 0; font-family: 'Manrope', sans-serif;">Customer Shopping Trends Analysis</h3>
+                </div>
+                <span class="tag" style="background: #ebf3fb; color: #1e6091; font-weight: 700;">Python Analytics</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                <div style="padding: 14px; border: 1px solid #e8e6df; border-radius: 8px; background: #faf9f6;">
+                  <strong style="font-size: 13px; display: block; margin-bottom: 4px;">Discount Sensitivity</strong>
+                  <span style="font-size: 12px; color: #666;">Highest sales volume observed in promotional tiers</span>
+                </div>
+                <div style="padding: 14px; border: 1px solid #e8e6df; border-radius: 8px; background: #faf9f6;">
+                  <strong style="font-size: 13px; display: block; margin-bottom: 4px;">Payment Channels</strong>
+                  <span style="font-size: 12px; color: #666;">Shift toward digital payments and UPI transactions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="heading">
+            <div>
+              <div class="kicker">Python · Data Analysis · Edunet Foundation Internship</div>
+              <h2>Identifying Shopping Trends Using Data Analysis</h2>
+              <div class="subtitle">An analytical study of customer transaction data to uncover purchasing patterns, discount sensitivity, and spending preferences.</div>
+            </div>
+            <a class="repo-btn" href="https://github.com/harigovinds04" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+          </div>
+          <p class="description">
+            Executed during my Data Analysis Internship with the Edunet Foundation (Dec 2024 – Jan 2025). The project examined large consumer transaction records to identify shopping habits across diverse product categories. By cleaning and processing data with Python, I identified correlation between discount offerings and basket sizes, consumer retention cycles, and predominant payment methods.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Customer Analytics</span>
+            <span class="tag">Transaction Modeling</span>
+            <span class="tag">IBM SkillsBuild</span>
+            <span class="tag">Edunet Foundation</span>
+          </div>
+          <div class="details">
+            <div>
+              <h3>Key Insights &amp; Findings</h3>
+              <div class="features">
+                <div class="feature"><span class="check">✓</span><span>Analyzed transaction records across diverse retail categories</span></div>
+                <div class="feature"><span class="check">✓</span><span>Evaluated discount impact on checkout frequency and average order value</span></div>
+                <div class="feature"><span class="check">✓</span><span>Mapped customer payment method preferences (Digital/UPI vs. Cash/Cards)</span></div>
+                <div class="feature"><span class="check">✓</span><span>Identified seasonal trends and repeat-buyer engagement metrics</span></div>
+              </div>
+            </div>
+            <div>
+              <h3>Technologies &amp; Tools</h3>
+              <div class="stack">
+                <span>Python</span>
+                <span>Data Handling</span>
+                <span>Statistical Modeling</span>
+                <span>IBM SkillsBuild</span>
+              </div>
+              <div class="note">
+                <strong>Internship Outcome</strong><br>
+                Provided actionable data-driven conclusions on how retail promotions and discount timing influence consumer purchasing decisions.
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4: HariVerse Portfolio & System -->
+      <article class="project-card" data-category="frontend">
+        <div class="visual visual-code">
+          <div class="mock-browser" style="background: #1e212b; border-color: #333;">
+            <div class="mock-browser-bar" style="background: #171922; border-bottom: 1px solid #2b2e3b;">
+              <i></i><i></i><i></i>
+              <span style="font-size: 11px; color: #8c909e; margin-left: 8px;">harigovind.dev/portfolio</span>
+            </div>
+            <div class="mock-browser-body" style="background: #1e212b; color: white; padding: 24px;">
+              <span style="color: #f16b45; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">HariVerse Design System</span>
+              <h3 style="font-size: 22px; font-weight: 800; margin: 6px 0 10px; font-family: 'Manrope', sans-serif;">Responsive &amp; Accessible Portfolio Architecture</h3>
+              <p style="color: #a0a4b0; font-size: 13px; max-width: 520px; margin: 0 0 16px;">Engineered with semantic HTML5, pure CSS3 variables, zero framework bloat, and fast client-side scripts.</p>
+              <div style="display: flex; gap: 8px;">
+                <span class="tag" style="background: #2a2e3d; color: #fff; border-color: #3e4459;">Semantic HTML5</span>
+                <span class="tag" style="background: #2a2e3d; color: #fff; border-color: #3e4459;">CSS Variables</span>
+                <span class="tag" style="background: #2a2e3d; color: #fff; border-color: #3e4459;">Zero Dependencies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="heading">
+            <div>
+              <div class="kicker">HTML5 · CSS3 · Vanilla JavaScript · Responsive UI</div>
+              <h2>HariVerse — Personal Portfolio &amp; Design System</h2>
+              <div class="subtitle">A custom web portfolio engineered for performance, readability, and mobile responsiveness.</div>
+            </div>
+            <a class="repo-btn" href="index.html">View Live Site ↗</a>
+          </div>
+          <p class="description">
+            Designed and built to present my academic achievements, software projects, leadership experiences, and contact channels in a cohesive visual identity. Built from scratch with CSS custom properties, fluid typography, responsive grid systems, and lightweight JavaScript.
+          </p>
+          <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Vanilla JS</span>
+            <span class="tag">Design Tokens</span>
+            <span class="tag">Mobile Responsive</span>
+          </div>
+          <div class="details">
+            <div>
+              <h3>Key Features</h3>
+              <div class="features">
+                <div class="feature"><span class="check">✓</span><span>Consistent styling across all subpages via unified styles.css</span></div>
+                <div class="feature"><span class="check">✓</span><span>Dynamic project category filtering powered by client-side JS</span></div>
+                <div class="feature"><span class="check">✓</span><span>Interactive mobile navigation drawer with accessible ARIA states</span></div>
+                <div class="feature"><span class="check">✓</span><span>Validated contact form with instant submission feedback</span></div>
+              </div>
+            </div>
+            <div>
+              <h3>Technology Stack</h3>
+              <div class="stack">
+                <span>HTML5 Semantic</span>
+                <span>CSS Variables</span>
+                <span>Flexbox / Grid</span>
+                <span>Vanilla JS</span>
+              </div>
+              <div class="note">
+                <strong>Engineering Focus</strong><br>
+                Clean code, zero bloated dependencies, instant load times, and high accessibility scores.
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Contact Banner -->
+    <section class="contact-banner" id="contact">
+      <div class="wrap">
+        <div class="kicker">05 — Interested in collaborating?</div>
+        <h2>Have a project in mind?<br>Let's build something great.</h2>
+        <p>I am looking for opportunities to contribute to dynamic software teams. Reach out to discuss how I can add value to your projects.</p>
+        <div class="contact-links">
+          <a class="btn btn-accent" href="contact.html">Get in touch <span>↗</span></a>
+          <a class="btn btn-light" href="assets/docs/Harigovind_S_Resume.pdf" download="Harigovind_S_Resume.pdf" target="_blank">Download Resume ↓</a>
+          <a class="btn btn-light" href="mailto:harigovind9400@gmail.com">harigovind9400@gmail.com ↗</a>
+          <a class="btn btn-light" href="https://github.com/harigovinds04" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> Harigovind S. Thodupuzha, Idukki.</span>
+      <span>Projects &amp; Works · HariVerse</span>
+      <a href="#projects">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
