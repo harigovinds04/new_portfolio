@@ -72,37 +72,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Contact Form Handler (on contact.html)
-  const contactForm = document.getElementById('contactForm');
+  // 4. Contact Form Handler with Web3Forms (on contact.html)
+  const form = document.getElementById('form') || document.getElementById('contactForm');
   const formStatus = document.getElementById('formStatus');
 
-  if (contactForm && formStatus) {
-    contactForm.addEventListener('submit', (e) => {
+  if (form) {
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      
-      const submitBtn = contactForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn ? submitBtn.innerHTML : 'Send message';
-      
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = 'Sending...';
-      }
 
-      setTimeout(() => {
-        formStatus.className = 'form-status success';
-        formStatus.textContent = 'Thank you for reaching out! Your message has been received. Harigovind will get back to you soon.';
-        formStatus.style.display = 'block';
-        contactForm.reset();
+      const formData = new FormData(form);
+      formData.append("access_key", "87e90910-c5d8-47c5-ac95-fb0a94738c1f");
 
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = originalText;
+      const originalText = submitBtn.textContent;
+
+      submitBtn.textContent = "Sending...";
+      submitBtn.disabled = true;
+
+      try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          if (formStatus) {
+            formStatus.className = 'form-status success';
+            formStatus.textContent = "Success! Your message has been sent.";
+            formStatus.style.display = 'block';
+          }
+          alert("Success! Your message has been sent.");
+          form.reset();
+        } else {
+          if (formStatus) {
+            formStatus.className = 'form-status error';
+            formStatus.textContent = "Error: " + data.message;
+            formStatus.style.display = 'block';
+          }
+          alert("Error: " + data.message);
         }
-
-        setTimeout(() => {
-          formStatus.style.display = 'none';
-        }, 6000);
-      }, 700);
+      } catch (error) {
+        if (formStatus) {
+          formStatus.className = 'form-status error';
+          formStatus.textContent = "Something went wrong. Please try again.";
+          formStatus.style.display = 'block';
+        }
+        alert("Something went wrong. Please try again.");
+      } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }
     });
   }
 });

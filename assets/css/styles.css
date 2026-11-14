@@ -1440,6 +1440,13 @@ textarea {
   display: block;
 }
 
+.form-status.error {
+  background: #fdf2f2;
+  color: #d9534f;
+  border: 1px solid #f5c6cb;
+  display: block;
+}
+
 /* Global Dark Contact Banner (above footer on subpages) */
 .contact-banner {
   background: var(--ink);
